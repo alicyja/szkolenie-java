@@ -8,7 +8,7 @@ public class Calculator {
         wydrukujWszystkieOperacje(4,2);
     }
 
-    public static int dodaj(int a, int b) {
+    public static Integer dodaj(Integer a, Integer b) {
         return a + b;
     }
 
@@ -29,3 +29,4 @@ public class Calculator {
         System.out.println(a + " / " + b + " = " + podziel(a, b));
     }
 }
+// komentarz
