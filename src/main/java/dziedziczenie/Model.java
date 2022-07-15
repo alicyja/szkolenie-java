@@ -1,43 +1,90 @@
 package dziedziczenie;
 
+import java.util.concurrent.atomic.AtomicMarkableReference;
+
 //extends - słowo kluczowe stosowane rpzy dziedziczeniu klas
 //super - słowo kluczowe stosowane przy dziedziczeniu odnosisię d konstruktora klasy nadrzędnej
-public class Model {
+public class Model extends Pojazd {
     private final String nazwa;
     private final Integer przebieg;
-    private final Integer pojemnoscSilnika;
+
+    private final String naped; //ja to dodałam
+    private final Double pojemnoscSilnika;
     private final Kolor kolor;
 
-    public Model(
-            final String marka, final  String rocznik,
-            final String naped, final String nazwa,
-            final Integer przebieg,
-            final Double pojemnoscSilnika,
-            final Kolor kolor) {
-
-        super(marka, rocznik, naped);
-        this.nazwa = "";
-       this.przebieg - 0;
-       this.pojemnoscSilnika = 0.0;
-      this.kolor =
+    public Model(String nazwa, Integer przebieg, Double pojemnoscSilnika, Kolor kolor) {
+        this.nazwa = nazwa;
+        this.przebieg = przebieg;
+        this.naped = naped;
+        this.pojemnoscSilnika = pojemnoscSilnika;
+        this.kolor = kolor;
     }
-    @0verride //adnotacja wykorzystywana doprzesyłania metod
+
+    public Model(String marka, String rocznik, String naped, String nazwa, Integer przebieg, Double pojemnoscSilnika, Kolor kolor) {
+        super(marka, rocznik, naped);
+        this.nazwa = nazwa;
+        this.przebieg = przebieg;
+        this.pojemnoscSilnika = pojemnoscSilnika;
+        this.naped = naped;
+        this.kolor = kolor;
+    }
+
+    public Model() {
+
+    }
+
     public String toString() {
         return "Marka: " + getMarka()
                 + "rocznik: " + getRocznik()
-                + "naped : " + getNaped()
+                + "naped : " + getNapęd()
                 + " nazwa modelu: " + this.nazwa
                 + " przebieg: " + this.przebieg
                 + " pojemnoscSilnika: " + this.pojemnoscSilnika
                 + "kolor: " + this.kolor;
     }
-        public Double getPojemnoscSilnika() {
+
+    public Double getPojemnoscSilnika() {
+
         return pojemnoscSilnika;
-        }
-        public Integer getPrzebieg() {
+    }
+
+    public Integer getPrzebieg() {
+
         return przebieg;
-        }
-        public Kolor getKolor() {
+    }
+
+    public String getNazwa() {
+
         return nazwa;
-        }
+    }
+
+    public Integer getPrzebieg() {
+        return przebieg;
+    }
+
+    public Double getPojemnoscSilnika() {
+        return pojemnoscSilnika;
+    }
+
+    public Kolor getKolor() {
+        return kolor;
+    }
+    public void setKolor(final Kolor kolor) {
+        this.kolor = kolor;
+    }
+
+    public void setNazwa(String Nazwa) {
+        this.nazwa = nazwa;
+    }
+
+    public void setPrzebieg(final Integer przebieg);
+        this.przebieg =przebieg;
+
+    public String getNaped() {
+        return naped;
+    }
+
+    public void setNaped(String przód) {
+    }
+}
 }

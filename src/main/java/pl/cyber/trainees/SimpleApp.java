@@ -13,6 +13,13 @@ public class SimpleApp {
 
         var modelPojazdu3 = new Model("VM", "2000", "przód", "passat", 300000, 2.0, Kolor.valueOf("NIEBIESKI"));
 
+        modelPojazdu1.setKolor(Kolor.CZERWONY);
+        modelPojazdu1.setNazwa("Audi");
+        modelPojazdu1.setPrzebieg("20000");
+        modelPojazdu1.setNaped("Przód");
+
+
+
         System.out.println(modelPojazdu1.toString());
         System.out.println(modelPojazdu1);
         System.out.println(modelPojazdu2.getMarka());
