@@ -7,7 +7,7 @@ public class Model extends Pojazd {
     private Integer przebieg;
     private Double pojemnoscSilnika;
     private Kolor kolor;
-
+//f
     public Model(String marka, String rocznik, String naped, String nazwa, Integer przebieg, Double pojemnoscSilnika, Kolor kolor) {
         super(marka, rocznik, naped);
         this.nazwa = nazwa;
