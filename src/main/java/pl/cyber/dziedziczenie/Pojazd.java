@@ -1,4 +1,4 @@
-package dziedziczenie;
+package pl.cyber.dziedziczenie;
 
 //Nowa klasa określająca markę pojazdu
 public class Pojazd {
@@ -31,11 +31,22 @@ public class Pojazd {
     public String getMarka() {
         return marka;
     }
-
     public String getRocznik() {
         return rocznik;
     }
-    public String getNapęd() {
+    public String getNaped() {
         return naped;
+    }
+
+    public void setMarka(String marka) {
+        this.marka = marka;
+    }
+
+    public void setRocznik(String rocznik) {
+        this.rocznik = rocznik;
+    }
+
+    public void setNaped(String naped) {
+        this.naped = naped;
     }
 }

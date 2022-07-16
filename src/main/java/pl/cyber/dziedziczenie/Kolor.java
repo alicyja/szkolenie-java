@@ -1,4 +1,4 @@
-package dziedziczenie;
+package pl.cyber.dziedziczenie;
 
 public enum Kolor {
       CZERWONY,
